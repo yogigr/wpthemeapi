@@ -4,8 +4,8 @@ namespace yogigr\WpThemeApi\Tests;
 
 class WpThemeApiTest extends TestCase
 {
-    public function testExample()
+    public function testGetToken()
     {
-        $this->assertTrue(true);
+        $this->assertEquals(config('wpthemeapi.envato_token'), "");
     }
 }
