@@ -23,6 +23,7 @@
     },
     "version": "1.0.0",
     "require-dev": {
-        "orchestra/testbench": "^9.1"
+        "orchestra/testbench": "^9.1",
+        "phpunit/phpunit": "^11.2"
     }
 }
