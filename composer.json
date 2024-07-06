@@ -4,10 +4,15 @@
     "type": "library",
     "license": "MIT",
     "authors": [
-      {
-        "name": "Yogi Gilang Ramadhan",
-        "email": "yogigilang2nd@gmail.com"
-      }
+        {
+            "name": "Yogi Gilang Ramadhan",
+            "email": "yogigilang2nd@gmail.com"
+        }
     ],
-    "require": {}
-  }
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "yogigr\\WpThemeApi\\": "src"
+        }
+    }
+}
