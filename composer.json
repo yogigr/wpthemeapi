@@ -23,7 +23,10 @@
         "laravel": {
             "providers": [
                 "yogigr\\WpThemeApi\\WpThemeApiServiceProvider"
-            ]
+            ],
+            "aliases": {
+                "WpThemeApi": "yogigr\\WpThemeApi\\Facades\\WpThemeApi"
+            }
         }
     },
     "version": "1.0.0",

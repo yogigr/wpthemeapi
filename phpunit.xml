@@ -21,4 +21,7 @@
       <directory suffix=".php">src/</directory>
     </include>
   </source>
+  <php>
+    <env name="ENVATO_TOKEN" value="1fUVbcsP1kY4WemSaY81wkkFmST93yGy"/>
+  </php>
 </phpunit>

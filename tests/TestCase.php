@@ -3,6 +3,7 @@
 namespace yogigr\WpThemeApi\Tests;
 
 use Orchestra\Testbench\TestCase as TestbenchTestCase;
+use yogigr\WpThemeApi\Facades\WpThemeApi;
 use yogigr\WpThemeApi\WpThemeApiServiceProvider;
 
 class TestCase extends TestbenchTestCase
@@ -17,6 +18,13 @@ class TestCase extends TestbenchTestCase
     {
         return [
             WpThemeApiServiceProvider::class,
+        ];
+    }
+
+    protected function getPackageAliases($app)
+    {
+        return [
+            'WpThemeApi' => WpThemeApi::class,
         ];
     }
 
