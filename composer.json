@@ -14,6 +14,13 @@
             "yogigr\\WpThemeApi\\": "src"
         }
     },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "yogigr\\WpThemeApi\\WpThemeApiServiceProvider"
+            ]
+        }
+    },
     "version": "1.0.0",
     "require-dev": {
         "orchestra/testbench": "^9.1"
