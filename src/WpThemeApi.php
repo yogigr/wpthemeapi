@@ -37,7 +37,13 @@ class WpThemeApi
     public function categories(string $path = "wordpress/"): Collection
     {
         $data = $this->request('v1/market/categories:themeforest.json');
-        return collect($data['categories'])->filter(fn ($d) => strpos($d['path'], $path) !== false);
+        $filteredCategories = collect($data['categories'])
+            ->filter(function ($category) use ($path) {
+                return strpos($category['path'], $path) !== false;
+            })
+            ->values(); // Menghapus kunci numerik dan hanya mempertahankan nilai
+
+        return $filteredCategories;
     }
 
     public function items(
