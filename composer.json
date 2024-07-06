@@ -9,11 +9,13 @@
             "email": "yogigilang2nd@gmail.com"
         }
     ],
-    "require": {},
     "autoload": {
         "psr-4": {
             "yogigr\\WpThemeApi\\": "src"
         }
     },
-    "version": "1.0.0"
+    "version": "1.0.0",
+    "require-dev": {
+        "orchestra/testbench": "^9.1"
+    }
 }
